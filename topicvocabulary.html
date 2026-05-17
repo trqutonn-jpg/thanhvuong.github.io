@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Từ vựng chủ đề - VocabularyLearning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="topic-vocabulary">
+  <header>
+    <a class="logo" href="index.html">📚 Vocabulary Learning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="hocflashcard.html">Học Flashcard</a>
+      <a href="quanlytuvung.html">Quản lý từ vựng</a>
+    </nav>
+  </header>
+
+  <main class="table-page">
+    <h2 data-topic-title>📘 Từ vựng chủ đề</h2>
+
+    <form class="search-form" data-topic-search>
+      <input type="hidden" name="topic" data-topic-id>
+      <input type="text" name="keyword" placeholder="Nhập từ khóa..." data-topic-keyword>
+      <button type="submit">Tìm kiếm</button>
+    </form>
+
+    <div class="table-custom">
+      <table>
+        <thead>
+          <tr>
+            <th>Từ</th>
+            <th>Loại từ</th>
+            <th>Nghĩa chính</th>
+            <th>Phát âm</th>
+            <th>Ví dụ</th>
+          </tr>
+        </thead>
+        <tbody data-topic-words></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

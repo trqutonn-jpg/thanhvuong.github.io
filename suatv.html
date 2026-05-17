@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sửa từ vựng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="edit-word">
+  <header>
+    <a class="logo" href="index.html">📚 VocabularyLearning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="quanlytuvung.html">Quản lý từ vựng</a>
+    </nav>
+  </header>
+
+  <main class="edit-container">
+    <h2>Sửa từ vựng</h2>
+
+    <form data-edit-word-form>
+      <label for="edit-word">Từ vựng</label>
+      <input id="edit-word" type="text" name="word" required>
+
+      <label for="edit-type">Loại từ</label>
+      <input id="edit-type" type="text" name="type">
+
+      <label for="edit-topic">Chủ đề</label>
+      <select id="edit-topic" name="topic" required data-topic-select></select>
+
+      <label for="edit-meaning">Nghĩa chính</label>
+      <input id="edit-meaning" type="text" name="meaning" required>
+
+      <label for="edit-pronunciation">Phát âm</label>
+      <input id="edit-pronunciation" type="text" name="pronunciation">
+
+      <label for="edit-example">Ví dụ</label>
+      <input id="edit-example" type="text" name="example">
+
+      <button type="submit" class="btn">Cập nhật</button>
+    </form>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

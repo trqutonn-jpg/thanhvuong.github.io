@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Từ vựng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="manage-words">
+  <header>
+    <a class="logo" href="index.html">📚 Vocabulary Learning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="quanlychude.html">Quản lý chủ đề</a>
+      <a href="hocflashcard.html">Học Flashcard</a>
+    </nav>
+  </header>
+
+  <main class="table-page">
+    <h2>📘 Quản lý Từ vựng</h2>
+
+    <form class="add-word-form" data-word-form>
+      <div>
+        <label for="word-topic">Chủ đề</label>
+        <select id="word-topic" name="topic" required data-topic-select>
+          <option value="">-- Chọn chủ đề --</option>
+        </select>
+      </div>
+      <div>
+        <label for="word">Từ vựng</label>
+        <input id="word" type="text" name="word" required>
+      </div>
+      <div>
+        <label for="type">Loại từ</label>
+        <input id="type" type="text" name="type">
+      </div>
+      <div>
+        <label for="meaning">Nghĩa chính</label>
+        <input id="meaning" type="text" name="meaning" required>
+      </div>
+      <div>
+        <label for="pronunciation">Phát âm</label>
+        <input id="pronunciation" type="text" name="pronunciation">
+      </div>
+      <div>
+        <label for="example">Ví dụ</label>
+        <input id="example" type="text" name="example">
+      </div>
+      <div class="form-actions">
+        <button class="btn-main" type="submit">Thêm từ</button>
+      </div>
+    </form>
+
+    <div class="table-custom">
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Từ</th>
+            <th>Loại từ</th>
+            <th>Nghĩa</th>
+            <th>Phát âm</th>
+            <th>Chủ đề</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody data-word-table></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

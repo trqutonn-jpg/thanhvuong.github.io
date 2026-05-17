@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý chủ đề</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="manage-topics">
+  <header>
+    <a class="logo" href="index.html">📚 MyTopic</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="setting_admin.html">Setting Admin</a>
+      <a href="quanlytuvung.html">Quản lý từ vựng</a>
+    </nav>
+  </header>
+
+  <main class="manage-container1">
+    <h2>Quản lý chủ đề</h2>
+
+    <form data-topic-form>
+      <label for="topic-name">Tên chủ đề:</label>
+      <input id="topic-name" type="text" name="TenChuDe" required>
+
+      <label for="topic-image">Ảnh chủ đề:</label>
+      <input id="topic-image" type="file" name="HinhAnh" accept="image/*">
+
+      <label>Hoặc chọn ảnh mặc định:</label>
+      <div class="image-picker" data-image-picker></div>
+
+      <button class="btn-main" type="submit">Thêm chủ đề</button>
+    </form>
+
+    <table id="topicTable" class="manage-table">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Tên chủ đề</th>
+          <th>Ảnh</th>
+          <th>Số từ</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody data-topic-table></tbody>
+    </table>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học Flashcard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="flashcard">
+  <header>
+    <a class="logo" href="index.html">📚 VocabularyLearning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="quanlytuvung.html">Quản lý từ vựng</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+    </nav>
+  </header>
+
+  <main class="container flashcard-container">
+    <a href="index.html" class="btn-home">← Quay lại Trang chủ</a>
+    <h2>📘 Học Flashcard</h2>
+
+    <label class="sr-label" for="flashcard-topic">Chủ đề</label>
+    <select id="flashcard-topic" data-flashcard-topic></select>
+
+    <div class="flashcard" id="flashcard">
+      <div class="card-inner">
+        <div class="card-face front" id="card-front">Không có dữ liệu</div>
+        <div class="card-face back" id="card-back">Không có dữ liệu</div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-gray" type="button" data-prev-card>« Trước</button>
+      <button class="btn btn-main" type="button" data-next-card>Tiếp »</button>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

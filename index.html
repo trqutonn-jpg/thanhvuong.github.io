@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ - VocabularyLearning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+  <div id="toast" class="toast">
+    Bạn ơi! Trước khi học hãy <a href="dang-nhap.html">đăng nhập</a> hoặc
+    <a href="dang-ky.html">đăng ký</a> nhé!
+  </div>
+
+  <header>
+    <a class="logo" href="index.html">
+      <span>📚 VocabularyLearning</span>
+    </a>
+
+    <nav>
+      <span class="welcome-text" data-user-welcome></span>
+      <a href="quanlychude.html">Quản lý chủ đề</a>
+      <a href="quanlytuvung.html">Quản lý từ vựng</a>
+      <a href="hocflashcard.html">Học Flashcard</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="dang-nhap.html" data-auth-link>Đăng nhập</a>
+      <a href="dang-ky.html" class="btn-main" data-register-link>Đăng ký</a>
+      <button class="btn-main nav-button hidden" type="button" data-logout>Đăng xuất</button>
+    </nav>
+  </header>
+
+  <div class="hero-banner hero-stage">
+    <div class="slide"><img src="image/banner1.jpg" alt="Vocabulary banner 1"></div>
+    <div class="slide"><img src="image/banner2.jpg" alt="Vocabulary banner 2"></div>
+    <div class="slide"><img src="image/banner3.jpg" alt="Vocabulary banner 3"></div>
+    <div class="banner-copy">
+      <span class="eyebrow">Học tiếng Anh theo chủ đề</span>
+      <h1>VocabularyLearning</h1>
+      <p>Ôn từ vựng bằng flashcard, xem nhanh theo chủ đề và tự quản lý bộ từ của bạn trên một giao diện gọn, sáng và dễ dùng.</p>
+      <div class="hero-actions">
+        <a class="btn-main" href="hocflashcard.html">Bắt đầu học</a>
+        <a class="btn-soft" href="quanlytuvung.html">Quản lý từ</a>
+      </div>
+      <div class="hero-metrics" aria-label="Thống kê nhanh">
+        <span><strong data-topic-count>0</strong> chủ đề</span>
+        <span><strong data-word-count>0</strong> từ vựng</span>
+        <span><strong data-review-count>0</strong> flashcard</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="hero">
+    <section class="topic-section">
+      <div class="section-heading">
+        <span class="eyebrow dark">Bộ học nổi bật</span>
+        <h2>Khám phá Chủ đề</h2>
+        <p>Chọn một chủ đề để xem danh sách từ vựng, nghĩa, phát âm và ví dụ minh họa.</p>
+      </div>
+      <div class="topic-list" data-featured-topics></div>
+    </section>
+
+    <section class="topic-section">
+      <div class="section-heading">
+        <span class="eyebrow dark">Không gian cá nhân</span>
+        <h2>My Topic</h2>
+        <p>Những nhóm từ bạn có thể thêm, sửa và dùng để luyện flashcard.</p>
+      </div>
+      <div class="topic-list" data-my-topics></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 VocabularyLearning. All rights reserved.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

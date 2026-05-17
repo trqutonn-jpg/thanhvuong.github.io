@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - VocabularyLearning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="login">
+  <header>
+    <a class="logo" href="index.html">📚 MyTopic</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="gioithieu.html">Giới thiệu</a>
+      <a href="mailto:support@vocabularylearning.com">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Đăng nhập</h2>
+    <p class="form-message" data-form-message></p>
+
+    <form data-login-form>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Nhập email..." required>
+
+      <label for="password">Mật khẩu</label>
+      <input id="password" type="password" name="password" placeholder="Nhập mật khẩu..." required>
+
+      <button type="submit" class="btn-main">Đăng nhập</button>
+    </form>
+
+    <p>Chưa có tài khoản? <a href="dang-ky.html">Đăng ký ngay</a></p>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

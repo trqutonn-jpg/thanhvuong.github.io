@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sửa chủ đề</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="edit-topic">
+  <header>
+    <a class="logo" href="index.html">📚 VocabularyLearning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="quanlychude.html">Quản lý chủ đề</a>
+    </nav>
+  </header>
+
+  <main class="edit-container">
+    <h2>Sửa Chủ Đề</h2>
+    <form data-edit-topic-form>
+      <label for="edit-topic-name">Tên chủ đề:</label>
+      <input id="edit-topic-name" type="text" name="TenChuDe" required>
+
+      <label>Ảnh hiện tại:</label>
+      <img class="topic-img-preview" src="image/banner1.jpg" alt="Ảnh chủ đề" data-current-topic-image>
+
+      <label for="edit-topic-image">Chọn ảnh mới (nếu muốn):</label>
+      <input id="edit-topic-image" type="file" name="HinhAnh" accept="image/*">
+
+      <label>Hoặc chọn ảnh mặc định:</label>
+      <div class="image-picker" data-image-picker></div>
+
+      <button type="submit" class="btn">Cập nhật</button>
+    </form>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

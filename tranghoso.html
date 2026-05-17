@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ sơ cá nhân - VocabularyLearning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="profile">
+  <header>
+    <a class="logo" href="index.html">📚 VocabularyLearning</a>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <button class="btn-main nav-button" type="button" data-logout>Đăng xuất</button>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Hồ sơ cá nhân</h2>
+    <p class="form-message" data-form-message></p>
+
+    <form data-profile-form>
+      <label for="profile-name">Họ tên</label>
+      <input id="profile-name" type="text" name="name" required>
+
+      <label for="profile-email">Email (không thể thay đổi)</label>
+      <input id="profile-email" type="email" disabled>
+
+      <label for="profile-birthday">Ngày sinh</label>
+      <input id="profile-birthday" type="date" name="birthday">
+
+      <label for="profile-password">Mật khẩu mới (để trống nếu không đổi)</label>
+      <input id="profile-password" type="password" name="password" placeholder="Nhập mật khẩu mới">
+
+      <p>Vai trò: <strong data-profile-role>hocsinh</strong></p>
+
+      <button type="submit" class="btn-main">Cập nhật</button>
+    </form>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
